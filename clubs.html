@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Welcome to Monster High!</title>
+
+    <style>
+    h3 {
+    color: rgb(222, 35, 225);
+    background-color: rgb(37, 202, 188);
+    border-radius: 25px;
+    font-size: 45px;
+    text-align: center;
+    }
+
+    h2 {
+    color: rgb(222, 35, 225);
+    background-color: rgb(37, 202, 188);
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: center;
+    }
+
+    .navbar {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(80, 31, 100);	
+    list-style-type: none;
+    overflow: hidden;
+    }
+
+    ul li {
+    float: left;
+    }
+
+    ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    ul li a:hover {
+    background-color: #111111;
+    }
+    
+    body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.pinimg.com/originals/f8/ee/5b/f8ee5b958f711a76f49d99c85847f3ad.png);
+    background-size: cover;
+    font-family: 'Courier New';
+    }    
+
+    form {
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkvWiAaqtM5YSIGOnDcyH7fZLHRt4FZkoJr-O4kYA_WG2z6Jwn3UIPWfVmnTHPJJxosJghcJlDbXQBqRNpCB_IeXd_R0SOM0mRDxa7LpYMUSREf7g-DQixtmvufyTtfwToI0tmnNKCRpqG/s1600/monster-high-cute-images-024.jpg);
+    border-radius: 25px;
+    padding: 40px ;
+    border-radius: 25px;
+    padding: 40px ;
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    justify-content: center;
+    }
+
+    </style>
+
+</head>
+<body>
+
+     <!--navbar-->
+    <nav class="navbar navbar-expand-md bg-warning navbar-warning">
+
+  <div class="container-fluid">
+
+  	 <a class="navbar-brand" href="#">
+      <img src="https://1000logos.net/wp-content/uploads/2020/11/Monster-High-logo.png" alt="Avatar Logo" style="width:150px;" class="rounded-pill"></a>
+      <span class="navbar-toggler-icon"></span>
+      
+
+   <!-- NAVBARRRR -->
+   <div class="collapse navbar-collapse" id="mynavbar">
+
+ <div class="container mt-3">	
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#clubs">Scary Cool Clubs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="grades.html">Grrrades Clawculator</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">About our Scary Cool School</a>
+    </li>
+    </ul>
+</div>
+
+     <a class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="button">Search</button>
+      </a>
+   	</div>
+  </div>
+</nav>
+
+<!--clubs-->
+<form>    
+<h3>Scary Cool Clubs Information</h3>
+<hr>
+
+<button type="button" class="btn btn-danger" py-click="club1">Cooking Club</button>
+
+<button type="button" class="btn btn-danger" py-click="club2">Mad Science Club</button>
+
+<button type="button" class="btn btn-danger" py-click="club3">Growl Choir</button>
+
+<button type="button" class="btn btn-danger" py-click="club4">Gymnastics Club</button>
+<br />
+
+<h3>About The Club</h3>
+<hr>
+<h2>
+<div id="output_clubs"></div>
+</h2>
+<br />
+<br />
+</form>
+
+
+<py-script src="main.py"></py-script>
+    
+</body>
+</html>
